@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timetable for {{ name }}</title>
+</head>
+<body>
+    <h1>Timetable for {{ name }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for subject in subjects %}
+            <tr>
+                <td>Monday</td>
+                <td>10:00-11:00</td>
+                <td>{{ subject }}</td>
+            </tr>
+            {% endfor %}
+            <!-- repeat for Tuesday, Wednesday, etc. -->
+        </tbody>
+    </table>
+</body>
+</html>
